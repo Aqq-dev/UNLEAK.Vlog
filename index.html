@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aqq's UNLEAK</title>
+    <title>ブログ形式のページ</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -41,18 +41,6 @@
         .post p {
             color: #666;
         }
-        .input-container {
-            margin-bottom: 20px;
-        }
-        .url-input {
-            margin-bottom: 10px;
-            padding: 5px;
-            width: 300px;
-            border: 1px solid #ccc;
-        }
-        .url-label {
-            margin-right: 10px;
-        }
     </style>
 </head>
 <body>
@@ -60,58 +48,28 @@
 <div class="container">
     <h1>ブログ記事の作成</h1>
 
-    <!-- URL入力フォーム -->
-    <div class="input-container">
-        <label class="url-label" for="image1-url">画像1のURL:</label>
-        <input class="url-input" type="url" id="image1-url" placeholder="https://media.discordapp.net/attachments/1317376583572389918/1328642322027642911/2025011417211400-F489C99A244DF57DCBDC4BFD2DB926F1.jpg?ex=67877216&is=67862096&hm=f91b6c9e6a7658858273631fb409ee17fe4b8bf2c72613153b4c36520be7e219&=&format=webp&width=1061&height=597" oninput="updateImage(1)">
-        <br>
-        <label class="url-label" for="image2-url">画像2のURL:</label>
-        <input class="url-input" type="url" id="image2-url" placeholder="画像2のURLを入力" oninput="updateImage(2)">
-        <br>
-        <label class="url-label" for="image3-url">画像3のURL:</label>
-        <input class="url-input" type="url" id="image3-url" placeholder="画像3のURLを入力" oninput="updateImage(3)">
-        <br>
-        <label class="url-label" for="image4-url">画像4のURL:</label>
-        <input class="url-input" type="url" id="image4-url" placeholder="画像4のURLを入力" oninput="updateImage(4)">
-        <br>
-        <label class="url-label" for="image5-url">画像5のURL:</label>
-        <input class="url-input" type="url" id="image5-url" placeholder="画像5のURLを入力" oninput="updateImage(5)">
-        <br>
-        <label class="url-label" for="image6-url">画像6のURL:</label>
-        <input class="url-input" type="url" id="image6-url" placeholder="画像6のURLを入力" oninput="updateImage(6)">
-        <br>
-        <label class="url-label" for="image7-url">画像7のURL:</label>
-        <input class="url-input" type="url" id="image7-url" placeholder="画像7のURLを入力" oninput="updateImage(7)">
-        <br>
-        <label class="url-label" for="image8-url">画像8のURL:</label>
-        <input class="url-input" type="url" id="image8-url" placeholder="画像8のURLを入力" oninput="updateImage(8)">
-        <br>
-        <label class="url-label" for="image9-url">画像9のURL:</label>
-        <input class="url-input" type="url" id="image9-url" placeholder="画像9のURLを入力" oninput="updateImage(9)">
-        <br>
-        <label class="url-label" for="image10-url">画像10のURL:</label>
-        <input class="url-input" type="url" id="image10-url" placeholder="画像10のURLを入力" oninput="updateImage(10)">
-    </div>
-
     <!-- 画像と記事の表示 -->
     <div class="post">
-        <img id="img1" src="https://via.placeholder.com/200x150" alt="Image 1">
+        <!-- 画像URLをここに貼り付け -->
+        <img src="https://example.com/image1.jpg" alt="Image 1">
         <div class="content">
-            <h2>UNLEAK1 1</h2>
+            <h2>タイトル 1</h2>
+            <p>これは最初のブログ記事の内容です。ここに写真とともに文章が表示されます。</p>
+        </div>
+    </div>
+
+    <div class="post">
+        <!-- 画像URLをここに貼り付け -->
+        <img https://media.discordapp.net/attachments/1317376583572389918/1328642322027642911/2025011417211400-F489C99A244DF57DCBDC4BFD2DB926F1.jpg?ex=67877216&is=67862096&hm=f91b6c9e6a7658858273631fb409ee17fe4b8bf2c72613153b4c36520be7e219&=&format=webp&width=1061&height=597 2">
+        <div class="content">
+            <h2>UNLEAK2 2</h2>
             <p>LEGO MESH 7 PROPS</p>
         </div>
     </div>
 
     <div class="post">
-        <img id="img2" src="https://via.placeholder.com/200x150" alt="Image 2">
-        <div class="content">
-            <h2>タイトル 2</h2>
-            <p>これは2番目のブログ記事の内容です。文章を自由に入力できます。</p>
-        </div>
-    </div>
-
-    <div class="post">
-        <img id="img3" src="https://via.placeholder.com/200x150" alt="Image 3">
+        <!-- 画像URLをここに貼り付け -->
+        <img src="https://example.com/image3.jpg" alt="Image 3">
         <div class="content">
             <h2>タイトル 3</h2>
             <p>これは3番目のブログ記事の内容です。写真とテキストがここに並びます。</p>
@@ -119,7 +77,8 @@
     </div>
 
     <div class="post">
-        <img id="img4" src="https://via.placeholder.com/200x150" alt="Image 4">
+        <!-- 画像URLをここに貼り付け -->
+        <img src="https://example.com/image4.jpg" alt="Image 4">
         <div class="content">
             <h2>タイトル 4</h2>
             <p>これは4番目のブログ記事です。</p>
@@ -127,7 +86,8 @@
     </div>
 
     <div class="post">
-        <img id="img5" src="https://via.placeholder.com/200x150" alt="Image 5">
+        <!-- 画像URLをここに貼り付け -->
+        <img src="https://example.com/image5.jpg" alt="Image 5">
         <div class="content">
             <h2>タイトル 5</h2>
             <p>内容をここに追加できます。</p>
@@ -135,7 +95,8 @@
     </div>
 
     <div class="post">
-        <img id="img6" src="https://via.placeholder.com/200x150" alt="Image 6">
+        <!-- 画像URLをここに貼り付け -->
+        <img src="https://example.com/image6.jpg" alt="Image 6">
         <div class="content">
             <h2>タイトル 6</h2>
             <p>ここにテキストを追加して、ブログの内容を説明します。</p>
@@ -143,7 +104,8 @@
     </div>
 
     <div class="post">
-        <img id="img7" src="https://via.placeholder.com/200x150" alt="Image 7">
+        <!-- 画像URLをここに貼り付け -->
+        <img src="https://example.com/image7.jpg" alt="Image 7">
         <div class="content">
             <h2>タイトル 7</h2>
             <p>追加のブログ記事の内容。</p>
@@ -151,7 +113,8 @@
     </div>
 
     <div class="post">
-        <img id="img8" src="https://via.placeholder.com/200x150" alt="Image 8">
+        <!-- 画像URLをここに貼り付け -->
+        <img src="https://example.com/image8.jpg" alt="Image 8">
         <div class="content">
             <h2>タイトル 8</h2>
             <p>ブログ記事のテキストをここに追加できます。</p>
@@ -159,7 +122,8 @@
     </div>
 
     <div class="post">
-        <img id="img9" src="https://via.placeholder.com/200x150" alt="Image 9">
+        <!-- 画像URLをここに貼り付け -->
+        <img src="https://example.com/image9.jpg" alt="Image 9">
         <div class="content">
             <h2>タイトル 9</h2>
             <p>内容をここに追加。</p>
@@ -167,24 +131,14 @@
     </div>
 
     <div class="post">
-        <img id="img10" src="https://via.placeholder.com/200x150" alt="Image 10">
+        <!-- 画像URLをここに貼り付け -->
+        <img src="https://example.com/image10.jpg" alt="Image 10">
         <div class="content">
             <h2>タイトル 10</h2>
             <p>最後のブログ記事です。</p>
         </div>
     </div>
 </div>
-
-<script>
-    function updateImage(postNumber) {
-        var imageUrl = document.getElementById("image" + postNumber + "-url").value;
-        if (imageUrl) {
-            document.getElementById("img" + postNumber).src = imageUrl;
-        } else {
-            document.getElementById("img" + postNumber).src = "https://via.placeholder.com/200x150"; // デフォルト画像
-        }
-    }
-</script>
 
 </body>
 </html>
