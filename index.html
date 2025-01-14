@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ブログ形式のページ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .post {
+            display: flex;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+        .post img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        .post .content {
+            flex: 1;
+        }
+        .post h2 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+        .post p {
+            color: #666;
+        }
+        .url-input {
+            margin-bottom: 10px;
+            padding: 5px;
+            width: 300px;
+            border: 1px solid #ccc;
+        }
+        .url-form {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>ブログ記事の作成</h1>
+
+    <form class="url-form" action="#" method="POST">
+        <label for="image1-url">画像1のURL:</label>
+        <input class="url-input" type="url" id="image1-url" name="image1-url" placeholder="画像のURLを入力">
+        <label for="image2-url">画像2のURL:</label>
+        <input class="url-input" type="url" id="image2-url" name="image2-url" placeholder="画像のURLを入力">
+        <label for="image3-url">画像3のURL:</label>
+        <input class="url-input" type="url" id="image3-url" name="image3-url" placeholder="画像のURLを入力">
+        <label for="image4-url">画像4のURL:</label>
+        <input class="url-input" type="url" id="image4-url" name="image4-url" placeholder="画像のURLを入力">
+        <label for="image5-url">画像5のURL:</label>
+        <input class="url-input" type="url" id="image5-url" name="image5-url" placeholder="画像のURLを入力">
+        <label for="image6-url">画像6のURL:</label>
+        <input class="url-input" type="url" id="image6-url" name="image6-url" placeholder="画像のURLを入力">
+        <label for="image7-url">画像7のURL:</label>
+        <input class="url-input" type="url" id="image7-url" name="image7-url" placeholder="画像のURLを入力">
+        <label for="image8-url">画像8のURL:</label>
+        <input class="url-input" type="url" id="image8-url" name="image8-url" placeholder="画像のURLを入力">
+        <label for="image9-url">画像9のURL:</label>
+        <input class="url-input" type="url" id="image9-url" name="image9-url" placeholder="画像のURLを入力">
+        <label for="image10-url">画像10のURL:</label>
+        <input class="url-input" type="url" id="image10-url" name="image10-url" placeholder="画像のURLを入力">
+    </form>
+
+    <div class="post">
+        <img src="image1.jpg" alt="Image 1">
+        <div class="content">
+            <h2>タイトル 1</h2>
+            <p>これは最初のブログ記事の内容です。ここに写真とともに文章が表示されます。</p>
+        </div>
+    </div>
+
+    <div class="post">
+        <img src="image2.jpg" alt="Image 2">
+        <div class="content">
+            <h2>タイトル 2</h2>
+            <p>これは2番目のブログ記事の内容です。文章を自由に入力できます。</p>
+        </div>
+    </div>
+
+    <div class="post">
+        <img src="image3.jpg" alt="Image 3">
+        <div class="content">
+            <h2>タイトル 3</h2>
+            <p>これは3番目のブログ記事の内容です。写真とテキストがここに並びます。</p>
+        </div>
+    </div>
+
+    <div class="post">
+        <img src="image4.jpg" alt="Image 4">
+        <div class="content">
+            <h2>タイトル 4</h2>
+            <p>これは4番目のブログ記事です。</p>
+        </div>
+    </div>
+
+    <div class="post">
+        <img src="image5.jpg" alt="Image 5">
+        <div class="content">
+            <h2>タイトル 5</h2>
+            <p>内容をここに追加できます。</p>
+        </div>
+    </div>
+
+    <div class="post">
+        <img src="image6.jpg" alt="Image 6">
+        <div class="content">
+            <h2>タイトル 6</h2>
+            <p>ここにテキストを追加して、ブログの内容を説明します。</p>
+        </div>
+    </div>
+
+    <div class="post">
+        <img src="image7.jpg" alt="Image 7">
+        <div class="content">
+            <h2>タイトル 7</h2>
+            <p>追加のブログ記事の内容。</p>
+        </div>
+    </div>
+
+    <div class="post">
+        <img src="image8.jpg" alt="Image 8">
+        <div class="content">
+            <h2>タイトル 8</h2>
+            <p>ブログ記事のテキストをここに追加できます。</p>
+        </div>
+    </div>
+
+    <div class="post">
+        <img src="image9.jpg" alt="Image 9">
+        <div class="content">
+            <h2>タイトル 9</h2>
+            <p>内容をここに追加。</p>
+        </div>
+    </div>
+
+    <div class="post">
+        <img src="image10.jpg" alt="Image 10">
+        <div class="content">
+            <h2>タイトル 10</h2>
+            <p>最後のブログ記事です。</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
